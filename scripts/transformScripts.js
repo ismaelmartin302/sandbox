@@ -13,7 +13,7 @@ class TransformScripts {
             if (value == alphabetArray.length) {
                 value = 0
             }
-            alterText += alphabetArray[value + 1]
+            alterText += alphabetArray[value + Math.round(Math.random() * 10)]
         }
 
         return alterText

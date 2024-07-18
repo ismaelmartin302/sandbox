@@ -7,7 +7,7 @@ class TransformScripts {
             alphabetArray.push(alphabet[index]);
         }
 
-        let alterText
+        let alterText = ""
         for (let index = 0; index < text.length; index++) {
             let value = alphabetArray.indexOf(text[index]);
             if (value == alphabetArray.length) {

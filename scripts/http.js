@@ -4,10 +4,10 @@ const desiredPort = process.env.PORT ?? 1234
 
 const processRequest = (req, res) => {
     console.log('request receveid:', req.url)
-    res.setHeader('Content-Type', 'text/plain; charset=utf8')
+    res.setHeader('Content-Type', 'text/html; charset=utf8')
     if (req.url === '/') {
         res.statusCode = 200
-        res.end('Homeàaa')
+        res.end('<h1>Homeàaa</h1>')
     } else {
         res.statusCode = 404
         res.end('Not found')

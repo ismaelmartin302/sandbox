@@ -4,6 +4,7 @@
   "description": "Hola",
   "main": "main.js",
   "scripts": {
+    "dev": "node --watch ./scripts/http.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

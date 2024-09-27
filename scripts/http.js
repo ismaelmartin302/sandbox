@@ -27,5 +27,5 @@ const processRequest = (req, res) => {
 
 const server = http.createServer(processRequest)
 server.listen(desiredPort, () => {
-    console.log(`Servidor escuchando en el puerto http://localhost:${desiredPort}`)
+    console.log(`Servidor en el puerto http://localhost:${desiredPort}`)
 })

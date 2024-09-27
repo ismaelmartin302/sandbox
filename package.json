@@ -1,0 +1,22 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "Hola",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node --watch ./scripts/http.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "rules": {
+      "indent": "off"
+    }
+  }
+}

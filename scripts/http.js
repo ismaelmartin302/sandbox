@@ -5,9 +5,9 @@ const desiredPort = process.env.PORT ?? 1234
 const processRequest = (req, res) => {
     console.log('request receveid:', req.url)
     if (req.url === '/') {
-        res.end('Holaaa!!! pon algo en la URL')
-    } else {
-        res.end(`Has puesto: '${req.url}' en la URL \n ${req}\n ${res.statusCode}`)
+        res.statusCode = 200
+        res.setHeader('Content-Type', 'text/plain; charset=utf8')
+        res.end('Homeàaa')
     }
 }
 

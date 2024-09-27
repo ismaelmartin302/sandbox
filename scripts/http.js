@@ -1,4 +1,5 @@
 const http = require('node:http')
+const fs = require('node:fs')
 
 const desiredPort = process.env.PORT ?? 1234
 
@@ -8,6 +9,16 @@ const processRequest = (req, res) => {
     if (req.url === '/') {
         res.statusCode = 200
         res.end('<h1>Homeàaa</h1>')
+    } else if (req.url === '/hola') {
+        res.statusCode = 200
+        fs.readFile('./index.html', (err, data) => {
+            if (err) {
+                res.statusCode = 500
+                res.end(`Error: ${err}`)
+            } else {
+                res.end(data)
+            }
+        })
     } else {
         res.statusCode = 404
         res.end('Not found')

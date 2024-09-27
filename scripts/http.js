@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
     if (req.url === '/') {
         res.end('Holaaa!!! pon algo en la URL')
     } else {
-        res.end(`Has puesto: '${req.url}' en la URL \n ${req}\n ${res}`)
+        res.end(`Has puesto: '${req.url}' en la URL \n ${req}\n ${res.statusCode}`)
     }
 })
 server.listen(desiredPort, () => {

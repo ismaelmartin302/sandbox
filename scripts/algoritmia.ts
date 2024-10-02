@@ -32,3 +32,5 @@ const paddocks = [
     { paddockManagerId: 6, farmId: 1, paddockTypeId: 2, harvestYear: 2012, area: 10587 },
     { paddockManagerId: 2, farmId: 2, paddockTypeId: 2, harvestYear: 2018, area: 16750 }
 ]
+
+let arrayFinal: Array<string>

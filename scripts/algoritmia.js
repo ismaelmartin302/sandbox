@@ -38,12 +38,12 @@ class EjerciciosAlgoritmos {
         paddocks.forEach(paddock => {
             const { paddockTypeId, area } = paddock
 
-            areaOfPaddocks[paddockTypeId] = areaOfPaddocks[paddockTypeId] ?? 0
+            areaOfPaddocks[paddockTypeId] = areaOfPaddocks[paddockTypeId] ?? 0 // No entiendo esto Buscar: Nullish Coalescing Operator
             areaOfPaddocks[paddockTypeId] += area
         })
         return paddockType.map(p => ({
-            ...p,
-            totalSum: areaOfPaddocks[p.id]
+            ...p, // que es esta cosa
+            totalSum: areaOfPaddocks[p.id] // Buscar como funciona el .map y el .sort
         })).sort((a, b) => b.totalSum - a.totalSum).map(p => p.name)
     }
 }

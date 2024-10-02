@@ -5,7 +5,7 @@ const paddockType = [
     { id: 2, name: 'AVELLANOS' },
     { id: 3, name: 'CEREZAS' },
     { id: 4, name: 'NOGALES' }
-];;;;;;;;
+]
 
 const paddocks = [
     { paddockManagerId: 6, farmId: 1, paddockTypeId: 1, harvestYear: 2019, area: 1200 },

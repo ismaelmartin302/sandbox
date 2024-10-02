@@ -9,7 +9,7 @@
   },
   "include": [
     "./scripts/**/*.ts"
-  ],
+, "scripts/algoritmia.js"  ],
   "exclude": [
     "node_modules"
   ]

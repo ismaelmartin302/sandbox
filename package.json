@@ -32,21 +32,12 @@
       "@typescript-eslint"
     ],
     "rules": {
-      "indent": "off",
       "space-before-function-paren": "off",
-      "@typescript-eslint/explicit-function-return-type": "off"
-    },
-    "overrides": [
-      {
-        "files": [
-          "*.ts",
-          "*.tsx"
-        ],
-        "parserOptions": {
-          "project": "./tsconfig.json"
-        }
-      }
-    ]
+      "indent" : [
+        "error",
+        2
+      ]
+    }
   },
   "dependencies": {
     "sandbox": "file:"

@@ -33,6 +33,10 @@ const paddocks = [
     { paddockManagerId: 2, farmId: 2, paddockTypeId: 2, harvestYear: 2018, area: 16750 }
 ]
 
-const arrayFinal = []
+let arrayFinal = []
 
-console.log(arrayFinal, paddockType, paddocks)
+paddockType.forEach(element => {
+    console.log(element)
+})
+
+console.log(arrayFinal)

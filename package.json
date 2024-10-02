@@ -34,10 +34,6 @@
     "rules": {
       "indent": "off",
       "space-before-function-paren": "off",
-      "@typescript-eslint/indent": [
-        "error",
-        2
-      ],
       "@typescript-eslint/explicit-function-return-type": "off"
     },
     "overrides": [

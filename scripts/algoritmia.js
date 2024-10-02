@@ -32,15 +32,20 @@ class EjerciciosAlgoritmos {
             { paddockManagerId: 6, farmId: 1, paddockTypeId: 2, harvestYear: 2012, area: 10587 },
             { paddockManagerId: 2, farmId: 2, paddockTypeId: 2, harvestYear: 2018, area: 16750 }
         ]
-        const paddockTypeSum =
-        const sortedPadocks = []
 
-        paddockType.forEach(element => {
-            sortedPadocks.push(element)
+        const areaOfPaddocks = {}
+
+        paddocks.forEach(paddock => {
+            const { paddockTypeId, area } = paddock
+
+            areaOfPaddocks[paddockTypeId] = areaOfPaddocks[paddockTypeId] ?? 0
+            areaOfPaddocks[paddockTypeId] += area
         })
-
-        return sortedPadocks
+        return paddockType.map(p => ({
+            ...p,
+            totalSum: areaOfPaddocks[p.id]
+        })).sort((a, b) => b.totalSum - a.totalSum).map(p => p.name)
     }
 }
-// console.log(EjerciciosAlgoritmos.ejercicio1())
+console.log(EjerciciosAlgoritmos.ejercicio1())
 export { EjerciciosAlgoritmos }
